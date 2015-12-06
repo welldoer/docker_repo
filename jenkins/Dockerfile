@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER welldoer
 ENV REFRESHED_AT 2015-12-06
 
-RUN apt-get update -qq && apt-get install -qqy curl openjdk-7-jdk git
+RUN apt-get update -qq && apt-get install -qqy wget curl openjdk-7-jdk git
 RUN wget -qO- https://get.docker.com/ | sh
 
 ENV JENKINS_HOME /opt/jenkins/data
